@@ -14,12 +14,12 @@ import org.springframework.stereotype.Component;
  */
 public class BillingServiceImpl implements BillingService {
     
-    @Value("${user.home}")
+    @Value("${currency}")
     private String currency;
 
     @Override
     public void billCustomer(int customerId) {
-    System.out.println("billing customer " + customerId  + " currency=" + currency);
+    System.out.println("billing customer " + customerId  + " (currency is " + currency + ")");
     }
 
     
