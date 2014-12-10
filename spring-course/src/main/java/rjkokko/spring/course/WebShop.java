@@ -5,8 +5,6 @@
  */
 package rjkokko.spring.course;
 
-import org.springframework.stereotype.Component;
-
 /**
  *
  * @author riku

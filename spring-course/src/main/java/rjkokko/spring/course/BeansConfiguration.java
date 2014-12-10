@@ -6,16 +6,11 @@
 package rjkokko.spring.course;
 
 import java.io.IOException;
-import java.util.Properties;
-import org.aspectj.lang.annotation.Aspect;
-import org.springframework.beans.factory.config.PreferencesPlaceholderConfigurer;
-import org.springframework.beans.factory.config.PropertyPlaceholderConfigurer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
-import org.springframework.core.io.Resource;
 
 /**
  *
