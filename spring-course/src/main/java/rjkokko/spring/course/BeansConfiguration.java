@@ -3,14 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package springcourse.webshop;
+package rjkokko.spring.course;
 
 import java.io.IOException;
 import java.util.Properties;
+import org.aspectj.lang.annotation.Aspect;
 import org.springframework.beans.factory.config.PreferencesPlaceholderConfigurer;
 import org.springframework.beans.factory.config.PropertyPlaceholderConfigurer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.core.io.Resource;
 
 /**
@@ -18,6 +20,7 @@ import org.springframework.core.io.Resource;
  * @author riku
  */
 @Configuration
+@EnableAspectJAutoProxy
 public class BeansConfiguration {
     
     @Bean
@@ -41,4 +44,9 @@ public class BeansConfiguration {
        configurer.setLocation(loc);
    }**/
     
+    
+  @Bean
+  public Logger getLogger() {
+      return new Logger();
+  }
 }
